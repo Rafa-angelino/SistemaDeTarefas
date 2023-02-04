@@ -23,6 +23,7 @@ namespace SistemaDeTarefas
                     options => options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase"))
                 );
             builder.Services.AddScoped<IUsuario, UsuarioRepositorio>();
+            builder.Services.AddScoped<ITarefa, TarefaRepositorio>();
 
             var app = builder.Build();
 
