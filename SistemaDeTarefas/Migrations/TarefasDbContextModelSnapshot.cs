@@ -50,7 +50,7 @@ namespace SistemaDeTarefas.Migrations
 
                     b.HasIndex("UsuarioId");
 
-                    b.ToTable("Tarefas");
+                    b.ToTable("Tarefas", (string)null);
                 });
 
             modelBuilder.Entity("SistemaDeTarefas.Models.Usuario", b =>
@@ -73,7 +73,7 @@ namespace SistemaDeTarefas.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Usuarios");
+                    b.ToTable("Usuarios", (string)null);
                 });
 
             modelBuilder.Entity("SistemaDeTarefas.Models.Tarefa", b =>
